@@ -1,81 +1,14 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8">
+<html lang="en">
+<head>
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Periodontology — Sample Flashcards</title>
-<style>
-:root{--teal:#2f6f7d;--teal-d:#255a66;--ink:#233035;--soft:#f7f3ea;--line:#e3ded5;--muted:#6d6860;}
-*{box-sizing:border-box;}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:var(--soft);line-height:1.5;}
-.wrap{max-width:560px;margin:0 auto;padding:22px 18px 40px;}
-.eyebrow{color:var(--teal);font-weight:800;letter-spacing:.13em;text-transform:uppercase;font-size:12px;}
-h1{font-size:clamp(24px,4vw,34px);color:var(--teal);margin:6px 0 4px;}
-.lead{color:#3a4146;margin:0 0 18px;}
-.bar{height:8px;background:#e7e1d6;border-radius:99px;overflow:hidden;}
-.bar-fill{height:100%;width:0;background:var(--teal);transition:width .35s ease;}
-.counter{font-size:13px;color:var(--muted);margin:8px 0 16px;text-align:center;font-weight:600;}
-.scene{perspective:1600px;width:100%;max-width:420px;margin:0 auto;aspect-ratio:1240/1748;transition:opacity .22s ease, transform .22s ease;}
-.scene.switching{opacity:0;transform:translateY(10px);}
-.flip{position:relative;width:100%;height:100%;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.2,.7,.2,1);cursor:pointer;}
-.flip.flipped{transform:rotateY(180deg);}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 12px 34px rgba(32,49,53,.12);overflow:hidden;}
-.face img{width:100%;height:100%;object-fit:contain;display:block;}
-.face.back{transform:rotateY(180deg);}
-.hint{text-align:center;color:var(--muted);font-size:13px;margin:12px 0 2px;transition:opacity .2s;}
-.btnrow{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:14px;}
-.btn{flex:1;min-width:150px;text-align:center;padding:13px 16px;border-radius:13px;border:1px solid var(--teal);background:#fff;color:var(--teal);font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;}
-.btn.primary{background:var(--teal);color:#fff;border-color:var(--teal);}
-.btn.primary:active{transform:translateY(1px);}
-.tools{text-align:center;margin-top:14px;}
-.link{background:none;border:none;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:13px;}
-.endbox{background:#fff;border:1px solid var(--line);border-radius:20px;padding:28px 22px;text-align:center;box-shadow:0 10px 30px rgba(32,49,53,.10);}
-.endbox h2{color:var(--teal);margin:0 0 8px;}
-.hidden{display:none;}
-footer{text-align:center;color:var(--muted);font-size:12px;margin-top:26px;}
-</style></head><body>
-<main class="wrap">
-  <div class="eyebrow">Active Recall Periodontology</div>
-  <h1>Sample flashcards</h1>
-  <p class="lead">A free taste of the deck, with cards from all three modules. Tap a card to reveal the answer.</p>
-  <div class="bar"><div class="bar-fill" id="fill"></div></div>
-  <div class="counter" id="counter"></div>
-  <section id="cardview">
-    <div class="scene" id="scene"><div class="flip" id="flip">
-      <div class="face front"><img id="imgFront" alt="flashcard question"></div>
-      <div class="face back"><img id="imgBack" alt="flashcard answer"></div>
-    </div></div>
-    <div class="hint" id="hint">Tap the card to reveal the answer</div>
-    <div class="btnrow">
-      <button class="btn" id="flipbtn">Reveal answer</button>
-      <button class="btn primary" id="nextbtn">Next card</button>
-    </div>
-    <div class="tools"><button class="link" id="restart">Shuffle &amp; restart</button></div>
-  </section>
-  <section id="endview" class="hidden"><div class="endbox">
-    <h2>That's the sample!</h2>
-    <p>You've seen <span id="total"></span> cards from across all three modules. The full deck has 180 evidence-based flashcards, and you're on the list, we'll let you know the moment it's ready.</p>
-    <div class="btnrow"><button class="btn primary" id="again">Go through them again</button></div>
-  </div></section>
-  <footer>Active Recall Periodontology &middot; free sample &middot; Dr. Manuela Rapani</footer>
-</main>
-<script>
-const CARDS = [{"code": "PER-ONE-001", "title": "Periodontitis", "front": "cards/PER-ONE-001_FRONT_EN.png", "back": "cards/PER-ONE-001_BACK_EN.png"}, {"code": "PER-ONE-011", "title": "Concept of Stage", "front": "cards/PER-ONE-011_FRONT_EN.png", "back": "cards/PER-ONE-011_BACK_EN.png"}, {"code": "PER-ONE-021", "title": "Concept of Grade", "front": "cards/PER-ONE-021_FRONT_EN.png", "back": "cards/PER-ONE-021_BACK_EN.png"}, {"code": "PER-ONE-031", "title": "The Complete Diagnosis", "front": "cards/PER-ONE-031_FRONT_EN.png", "back": "cards/PER-ONE-031_BACK_EN.png"}, {"code": "PER-ONE-070", "title": "Periodontal Phenotype", "front": "cards/PER-ONE-070_FRONT_EN.png", "back": "cards/PER-ONE-070_BACK_EN.png"}, {"code": "PER-ONE-071", "title": "The Periodontal Ligament", "front": "cards/PER-ONE-071_FRONT_EN.png", "back": "cards/PER-ONE-071_BACK_EN.png"}, {"code": "PER-ONE-104", "title": "Microbial Complexes (Socransky)", "front": "cards/PER-ONE-104_FRONT_EN.png", "back": "cards/PER-ONE-104_BACK_EN.png"}, {"code": "PER-ONE-114", "title": "Health — Gingivitis — Periodontitis", "front": "cards/PER-ONE-114_FRONT_EN.png", "back": "cards/PER-ONE-114_BACK_EN.png"}, {"code": "PER-ONE-121", "title": "The Periodontal Examination", "front": "cards/PER-ONE-121_FRONT_EN.png", "back": "cards/PER-ONE-121_BACK_EN.png"}, {"code": "PER-ONE-131", "title": "From Findings to Diagnosis (2018)", "front": "cards/PER-ONE-131_FRONT_EN.png", "back": "cards/PER-ONE-131_BACK_EN.png"}, {"code": "PER-ONE-141", "title": "Step 1 Therapy: Overview & Goals", "front": "cards/PER-ONE-141_FRONT_EN.png", "back": "cards/PER-ONE-141_BACK_EN.png"}, {"code": "PER-ONE-172", "title": "Treated & Stable Periodontitis (2018)", "front": "cards/PER-ONE-172_FRONT_EN.png", "back": "cards/PER-ONE-172_BACK_EN.png"}];
-const KEY='perio_demo_v1';
-const el=id=>document.getElementById(id);
-let state;
-function shuffle(n){const a=[...Array(n).keys()];for(let i=n-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
-function load(){try{const s=JSON.parse(localStorage.getItem(KEY));if(s&&Array.isArray(s.order)&&s.order.length===CARDS.length&&typeof s.pos==='number')return s;}catch(e){}return {order:shuffle(CARDS.length),pos:0};}
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
-function bar(){el('fill').style.width=(Math.min(state.pos,CARDS.length)/CARDS.length*100)+'%';}
-function paint(){const c=CARDS[state.order[state.pos]];el('imgFront').src=c.front;el('imgFront').alt=c.title+' (question)';el('imgBack').src=c.back;el('imgBack').alt=c.title+' (answer)';el('flip').classList.remove('flipped');el('flipbtn').textContent='Reveal answer';el('hint').style.opacity='1';el('counter').textContent='Card '+(state.pos+1)+' of '+CARDS.length;}
-function render(){bar();if(state.pos>=CARDS.length){el('cardview').classList.add('hidden');el('endview').classList.remove('hidden');el('counter').textContent='Done';return;}el('cardview').classList.remove('hidden');el('endview').classList.add('hidden');paint();}
-function flip(){const back=el('flip').classList.toggle('flipped');el('flipbtn').textContent=back?'Show question':'Reveal answer';el('hint').style.opacity=back?'0':'1';}
-function next(){const sc=el('scene');sc.classList.add('switching');setTimeout(()=>{state.pos++;save();render();sc.classList.remove('switching');},220);}
-function restart(){state={order:shuffle(CARDS.length),pos:0};save();render();}
-el('flip').addEventListener('click',flip);
-el('flipbtn').addEventListener('click',e=>{e.stopPropagation();flip();});
-el('nextbtn').addEventListener('click',next);
-el('restart').addEventListener('click',restart);
-el('again').addEventListener('click',restart);
-el('total').textContent=CARDS.length;
-state=load();render();
-</script></body></html>
+<title>Periodontology ONE · Sample cards</title>
+<link rel="canonical" href="https://manuelarapani.github.io/periodontology-landing/#samples">
+<meta http-equiv="refresh" content="0; url=./#samples">
+<meta name="robots" content="noindex">
+</head>
+<body style="font-family:Arial,sans-serif;background:#FBF6EE;color:#2B2723;padding:24px">
+<p>The sample cards have moved. <a href="./#samples">Open the sample cards</a>.</p>
+</body>
+</html>
