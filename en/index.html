@@ -21,9 +21,23 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Periodontology ONE flashcard preview">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Poppins:wght@500;600&family=Roboto+Mono:wght@400;500&display=swap">
+<style>
+/* Fonts self-hosted (SIL Open Font License, see fonts/OFL.txt) */
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/lato-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/lato-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/lato-latin-700-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:normal;font-weight:700;font-display:swap;src:url(../fonts/lato-latin-ext-700-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Lato';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/lato-latin-400-italic.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Lato';font-style:italic;font-weight:400;font-display:swap;src:url(../fonts/lato-latin-ext-400-italic.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/poppins-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/poppins-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/poppins-latin-600-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Poppins';font-style:normal;font-weight:600;font-display:swap;src:url(../fonts/poppins-latin-ext-600-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/roboto-mono-latin-400-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:400;font-display:swap;src:url(../fonts/roboto-mono-latin-ext-400-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/roboto-mono-latin-500-normal.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Roboto Mono';font-style:normal;font-weight:500;font-display:swap;src:url(../fonts/roboto-mono-latin-ext-500-normal.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+</style>
 <script data-goatcounter="https://perio-landing.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </head>
 <body>
@@ -227,8 +241,11 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:
 <div class="langbar" id="langbar" data-show-for="it" hidden>
   <div class="wrap"><span>Questa pagina è disponibile anche in italiano.</span><a href="../index.html" hreflang="it">Leggi in italiano</a></div>
 </div>
+<div class="banner" id="check" role="status" hidden>
+  <div class="wrap">Almost done: we've sent you an email. Click the link to confirm your sign-up (if you can't find it, check your spam folder).</div>
+</div>
 <div class="banner" id="thanks" role="status" hidden>
-  <div class="wrap">You're on the waitlist. We'll write to you when the beta opens.</div>
+  <div class="wrap">Sign-up confirmed: you're on the waitlist. We'll write to you when the beta opens.</div>
 </div>
 
 <header class="top">
@@ -389,22 +406,19 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:
         <h2>Join the waitlist</h2>
         <p>Be the first to know when the beta of the web app opens. Waitlist members are invited first and get early-access pricing.</p>
       </div>
-      <form id="waitlist-form" action="https://formsubmit.co/manuela.rapani80@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New Periodontology waitlist signup">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="https://manuelarapani.github.io/periodontology-landing/en/#thanks">
-        <input type="hidden" name="language" value="en">
-        <div class="hp" aria-hidden="true"><label for="hp-field">Leave empty</label><input type="text" id="hp-field" name="_honey" tabindex="-1" autocomplete="off"></div>
+      <form id="waitlist-form" action="https://d9d2e481.sibforms.com/serve/MUIFADlKqN8LPDEcy0pXtNAtIh5HrM2H5h978xjqEM-mizdEkT8zidTU9z1neSiG_tQSqcHKrUQDFBHO6crOGCYpDEG0-oL8pb7-qeimSM65LiDjqH9OuFeQT-Wl9m_GMHuqMjQISzq2Uz3MGoYY8Eqq6vxpc6_dR-Lbk6khmfVL9-o2s-ZjFw9lwcArC1M2_J36yeA-aHKhKF79fg==" method="POST" data-sending="Sending…" data-invalid="That email address doesn't look valid. Please check it and try again." data-error="We couldn't record your sign-up. Please try again shortly or write to info@smartgrowthd.it.">
+        <input type="hidden" name="locale" value="en">
+        <input type="hidden" name="html_type" value="simple">
+        <div class="hp" aria-hidden="true"><label for="hp-field">Leave empty</label><input type="text" id="hp-field" name="email_address_check" value="" tabindex="-1" autocomplete="off"></div>
         <label class="field" for="email">Email address
-          <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@university.edu">
+          <input type="email" id="email" name="EMAIL" required autocomplete="email" placeholder="you@university.edu">
         </label>
         <div class="consent">
-          <input type="checkbox" id="consent" name="consent" value="Agreed to privacy notice v1 (November 2026) - EN page" required>
+          <input type="checkbox" id="consent" required>
           <label for="consent">I agree to receive emails about the launch and the beta of Periodontology ONE, as described in the <a href="#privacy">privacy notice</a>.</label>
         </div>
         <button class="btn primary" type="submit">Notify me</button>
-        <p class="form-note">We only write about this release. You can unsubscribe at any time.</p>
+        <p class="form-note">We'll send you an email to confirm your sign-up. We only write about this release, and you can unsubscribe at any time.</p>
         <p class="form-msg" id="form-msg" role="status" hidden data-preview="Preview only: signups are switched off on this copy of the page."></p>
       </form>
     </div>
@@ -438,8 +452,8 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:
       <details id="privacy">
         <summary>Privacy notice — waitlist</summary>
         <div class="prose">
-          <p class="muted">Version 1 · November 2026</p>
-          <dl><div><dt>Data controller</dt><dd>SMART GROWTH D S.R.L., Via Federico Salomone 83, 66100 Chieti (CH), Italy, tax code and VAT number 02746220694. Privacy contact: <a href="mailto:info@smartgrowthd.it">info@smartgrowthd.it</a>.</dd></div><div><dt>What we collect</dt><dd>The email address you enter, the date you join and your consent.</dd></div><div><dt>Why</dt><dd>To tell you when Periodontology ONE launches, invite you to the beta and send you the early-access offer. We do not sell your address or use it for anything else.</dd></div><div><dt>Legal basis</dt><dd>Your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time by replying to any of our emails or writing to the privacy contact. Withdrawal does not affect what was done before it.</dd></div><div><dt>Who handles the data</dt><dd>The form is sent through FormSubmit (formsubmit.co), which forwards it to our mailbox. The site is hosted on GitHub Pages (GitHub, Inc.). GitHub, Inc. is based in the United States: for data coming from the European Union it participates in the EU-U.S. Data Privacy Framework and uses the European Commission's standard contractual clauses. FormSubmit does not state in its privacy policy in which country it processes data: before the launch we will move to a service based in the European Union.</dd></div><div><dt>Statistics</dt><dd>Visits are counted with GoatCounter, which uses no cookies and does not build a profile of you.</dd></div><div><dt>How long we keep it</dt><dd>Until you withdraw your consent, and no longer than 24 months after the launch.</dd></div><div><dt>Your rights</dt><dd>Access, rectification, erasure, restriction, portability and objection (Arts. 15–21 GDPR), and the right to lodge a complaint with a supervisory authority; in Italy, the Garante per la protezione dei dati personali.</dd></div></dl>
+          <p class="muted">Version 2 · November 2026</p>
+          <dl><div><dt>Data controller</dt><dd>SMART GROWTH D S.R.L., Via Federico Salomone 83, 66100 Chieti (CH), Italy, tax code and VAT number 02746220694. Privacy contact: <a href="mailto:info@smartgrowthd.it">info@smartgrowthd.it</a>.</dd></div><div><dt>What we collect</dt><dd>The email address you enter, the date you join, your consent and the confirmation you give by clicking the link in the email we send you. When you confirm, Brevo records the date, time and IP address of the confirmation, as proof of your consent. In the emails we send you, Brevo also records whether you open them and which links you click.</dd></div><div><dt>Why</dt><dd>To tell you when Periodontology ONE launches, invite you to the beta and send you the early-access offer. We do not sell your address or use it for anything else.</dd></div><div><dt>Legal basis</dt><dd>Your consent (Art. 6(1)(a) GDPR). You can withdraw it at any time with the unsubscribe link in our emails, by replying to any of our emails or by writing to the privacy contact. Withdrawal does not affect what was done before it.</dd></div><div><dt>Who handles the data</dt><dd>The form sends your address to Brevo, a company based in France, which manages the waitlist and sends the emails on our behalf. Brevo stores the data on servers in the European Union; some of its providers, for example for network security and customer support, are based in the United States: for these transfers Brevo uses the European Commission's standard contractual clauses and, for the United States, the EU-U.S. Data Privacy Framework. The site is hosted on GitHub Pages (GitHub, Inc.). GitHub, Inc. is based in the United States: for data coming from the European Union it participates in the EU-U.S. Data Privacy Framework and uses the European Commission's standard contractual clauses.</dd></div><div><dt>Statistics</dt><dd>Visits are counted with GoatCounter, which uses no cookies and does not build a profile of you.</dd></div><div><dt>How long we keep it</dt><dd>Until you withdraw your consent, and no longer than 24 months after the launch.</dd></div><div><dt>Your rights</dt><dd>Access, rectification, erasure, restriction, portability and objection (Arts. 15–21 GDPR), and the right to lodge a complaint with a supervisory authority; in Italy, the Garante per la protezione dei dati personali.</dd></div></dl>
         </div>
       </details>
       <details id="disclaimer">
@@ -474,8 +488,12 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:
   document.querySelectorAll('a[href="#privacy"]').forEach(function(a){
     a.addEventListener("click",function(){var d=document.getElementById("privacy"); if(d) d.open=true;});
   });
-  function showThanks(){var b=document.getElementById("thanks"); if(b) b.hidden=location.hash!=="#thanks";}
-  showThanks(); window.addEventListener("hashchange",showThanks);
+  function showThanks(){
+    var on=false;
+    ["thanks","check"].forEach(function(id){var b=document.getElementById(id); if(b){b.hidden=location.hash!=="#"+id; if(!b.hidden) on=true;}});
+    if(on) window.scrollTo(0,0); /* the banner sits at the very top: show it whole */
+  }
+  showThanks(); window.addEventListener("hashchange",showThanks); window.addEventListener("load",showThanks);
   /* offer the other language to readers whose browser prefers it */
   var bar=document.getElementById("langbar");
   if(bar){
@@ -483,12 +501,35 @@ footer.site .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:
     var wantsIt=langs[0]&&langs[0].indexOf("it")===0;
     bar.hidden=bar.dataset.showFor==="it"?!wantsIt:wantsIt;
   }
-  /* inside a preview frame the form stays off, so test signups never reach the mailbox */
+  /* inside a preview frame the form stays off, so test signups never reach the list */
   var framed=false; try{framed=window.self!==window.top;}catch(e){framed=true;}
   var form=document.getElementById("waitlist-form");
-  if(framed&&form){
+  if(form){
+    var msg=document.getElementById("form-msg");
+    var say=function(t){msg.textContent=t; msg.hidden=false;};
     form.addEventListener("submit",function(e){
-      e.preventDefault(); var m=document.getElementById("form-msg"); m.textContent=m.dataset.preview; m.hidden=false;
+      e.preventDefault();
+      if(framed){say(msg.dataset.preview); return;}
+      if(form.dataset.busy) return;
+      var btn=form.querySelector('button[type="submit"]'), label=btn.textContent;
+      form.dataset.busy="1"; btn.disabled=true; btn.textContent=form.dataset.sending; msg.hidden=true;
+      var data=new FormData();
+      data.append("EMAIL",form.elements.EMAIL.value.trim());
+      data.append("email_address_check",form.elements.email_address_check.value);
+      data.append("locale",form.elements.locale.value);
+      fetch(form.action+"?isAjax=1",{method:"POST",body:data}).then(function(r){
+        return r.json().catch(function(){return {success:false};});
+      }).then(function(res){
+        if(res&&res.success){
+          form.reset(); location.hash="#check"; window.scrollTo(0,0);
+        }else{
+          say(res&&res.errors&&res.errors.EMAIL?form.dataset.invalid:form.dataset.error);
+        }
+      }).catch(function(){
+        say(form.dataset.error);
+      }).then(function(){
+        delete form.dataset.busy; btn.disabled=false; btn.textContent=label;
+      });
     });
   }
 })();
